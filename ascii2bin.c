@@ -7,12 +7,10 @@
 int main (int argc, char * argv[], char ** envp){
 
 int offset = 0x30;
-long number;
+int number;
 int digit;
-char ascii_value;
-
-    
-    int retval = 1;
+byte ascii_value; 
+int retval;
     read(STDIN_FILENO, &ascii_value, 1);
     while (retval == 1){
              digit =  ascii_value - offset;
@@ -24,9 +22,11 @@ char ascii_value;
              
          
      }   
-    printf("%ld\n", number);
+    printf("%u\n", number);
     return 0;
     
 
  }
+ 
+
  
