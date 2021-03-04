@@ -7,7 +7,7 @@
 int main (int argc, char * argv[], char ** envp){
 
 int offset = 0x30;
-long number;
+unsigned int number = 0;
 int digit;
 char ascii_value;
 
@@ -24,11 +24,9 @@ char ascii_value;
              
          
      }   
-    printf("%ld\n", number);
+    printf("%u\n", number);
     return 0;
     
 
  }
- 
-
  
